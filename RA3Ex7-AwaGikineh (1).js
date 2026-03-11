@@ -1,6 +1,6 @@
 //RA3Ex7 - Activitats ràpides DOM JS
 
-"Prueba Commit"
+"Prueba Commit "
 
 //1 - Selecció: Usa querySelector per canviar el color d'un <h1> quan la pàgina carregui.
 const titol = document.querySelector('#titol-principal');
