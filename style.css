@@ -1,0 +1,207 @@
+:root {
+    --bg: #f5f2eb;
+    --text: #1a1a1a;
+    --accent: #e63946;
+    --accent2: #457b9d;
+    --card-bg: #ffffff;
+    --border: #1a1a1a;
+    --mono: 'JetBrains Mono', monospace;
+    --sans: 'Syne', sans-serif;
+    --radius: 4px;
+    --shadow: 4px 4px 0px var(--border);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: var(--sans);
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+#site-header {
+    background-color: var(--text);
+    color: #f5f2eb;
+    padding: 48px 32px 40px;
+    border-bottom: 3px solid var(--accent);
+}
+
+.header-inner { max-width: 860px; margin: 0 auto; }
+
+.badge {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    background: var(--accent);
+    color: white;
+    padding: 3px 10px;
+    border-radius: 2px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+#titol-principal {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: #f5f2eb; 
+}
+
+.subtitle {
+    font-family: var(--mono);
+    font-size: 0.85rem;
+    opacity: 0.6;
+    margin-top: 10px;
+}
+
+main {
+    max-width: 860px;
+    margin: 40px auto;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 24px;
+}
+
+.caixa {
+    background: var(--card-bg);
+    border: 2px solid var(--border);
+    border-radius: var(--radius);
+    padding: 28px 24px;
+    box-shadow: var(--shadow);
+    position: relative;
+    transition: box-shadow 0.15s, transform 0.15s, background-color 0.3s;
+}
+
+.caixa:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px var(--border);
+}
+
+.ex-label {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 0.12em;
+    margin-bottom: 6px;
+}
+
+.caixa h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 8px;
+}
+
+.caixa p, .caixa .desc { font-size: 0.92rem; color: #333; }
+
+code {
+    font-family: var(--mono);
+    font-size: 0.82em;
+    background: #f0eee8;
+    border: 1px solid #ddd;
+    padding: 1px 5px;
+    border-radius: 3px;
+    color: var(--accent);
+}
+
+button {
+    font-family: var(--sans);
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+    padding: 9px 18px;
+    margin-top: 14px;
+    background: var(--text);
+    color: #f5f2eb;
+    border: 2px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: 3px 3px 0 var(--accent);
+    transition: transform 0.1s, box-shadow 0.1s;
+    letter-spacing: 0.03em;
+}
+
+button:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 4px 4px 0 var(--accent);
+}
+
+button:active {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0 var(--accent);
+}
+
+#imatge-canviant {
+    display: block;
+    margin-top: 12px;
+    border: 2px solid var(--border);
+    border-radius: var(--radius);
+    max-width: 100%;
+    height: auto;
+}
+
+#llista-compra {
+    list-style: none;
+    margin-top: 8px;
+}
+
+#llista-compra li {
+    font-family: var(--mono);
+    font-size: 0.88rem;
+    padding: 5px 0 5px 18px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+
+#llista-compra li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+}
+
+.actiu {
+    background-color: #fff3b0;
+    font-weight: 700;
+    color: #b5470a;
+    padding: 4px 8px;
+    border-radius: 3px;
+    border: 1px solid #e0a020;
+    transition: all 0.2s;
+}
+
+#element-eliminar {
+    background: #ffe0e0;
+    border: 2px dashed var(--accent);
+    padding: 16px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: var(--radius);
+    margin-top: 12px;
+    font-family: var(--mono);
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--accent);
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+#element-eliminar:hover {
+    background: #ffd0d0;
+    transform: scale(1.02);
+}
+
+footer {
+    text-align: center;
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    color: #888;
+    padding: 32px 16px 40px;
+    border-top: 1px solid #ddd;
+    margin-top: 24px;
+}
