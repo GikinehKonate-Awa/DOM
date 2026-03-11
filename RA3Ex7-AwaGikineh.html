@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicis pràctics de DOM</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; line-height: 1.6; transition: background 0.3s; }
+        .caixa { border: 2px solid #333; padding: 15px; margin-bottom: 20px; border-radius: 8px; }
+        .actiu { background-color: #ffd700; font-weight: bold; border-color: #ffa500; }
+        .dark-mode { background-color: #2c3e50; color: white; }
+        img { display: block; margin-top: 10px; border-radius: 4px; }
+        button { cursor: pointer; padding: 8px 12px; margin-top: 5px; }
+    </style>
+</head>
+<body>
+
+    <h1 id="titol-principal">Aprenent el DOM</h1>
+
+    <div class="caixa">
+        <p id="paragraf-hola">Aquest text canviarà...</p>
+    </div>
+
+    <div class="caixa">
+        <img id="imatge-canviant" src="https://via.placeholder.com/150/cccccc" alt="Imatge de prova" width="150">
+        <p><small>Canvia el 'src' d'aquesta imatge.</small></p>
+    </div>
+
+    <div class="caixa" id="caixa-estil">
+        <p>Fes clic al botó per saludar o canviar el fons d'aquesta caixa.</p>
+        <button id="boto-alerta">Llança Alerta</button>
+    </div>
+
+    <div class="caixa">
+        <p id="text-classe">Aquest text pot guanyar la classe 'actiu'.</p>
+        <button id="boto-toggle">Commuta Classe (Toggle)</button>
+    </div>
+
+    <div class="caixa">
+        <h3>La meva llista de la compra:</h3>
+        <ul id="llista-compra">
+            <li>Pa</li>
+            <li>Llet</li>
+        </ul>
+        <button id="boto-afegir">Afegir Item</button>
+    </div>
+
+    <div class="caixa">
+        <p>Fes clic sobre aquest element per eliminar-lo del mapa:</p>
+        <div id="element-eliminar" style="background: #ffcccc; padding: 10px; cursor: pointer; text-align: center;">
+            BORRA'M!
+        </div>
+    </div>
+
+    <script>
+        // Els alumnes poden començar a escriure aquí sota:
+        console.log("DOM carregat i a punt!");
+        
+    </script>
+    <script type="text/javascript" src="RA3Ex7-AwaGikineh.js"><script/>
+</body>
+</html>
