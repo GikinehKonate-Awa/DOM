@@ -12,7 +12,7 @@ paragraf.textContent = 'Hola Món';
 
 //3 - Atributs: Canvia la 'src' d'una imatge <img> usant setAttribute.
 const imatge = document.getElementById('imatge-canviant');
-imatge.setAttribute('src', 'https://ceutec.hn/wp-content/uploads/2024/07/cuales-son-lenguajes-programacion.png');
+imatge.setAttribute('src', 'https://allyouneedisbiology.wordpress.com/wp-content/uploads/2015/07/martin_caretta_2000x13391.jpg?w=1038&h=576&crop=1');
 
 //4 - Estils: Canvia el color de fons (backgroundColor) d'un element en fer-li clic.
 const caixaEstil = document.getElementById('caixa-estil');
